@@ -1,0 +1,83 @@
+/* https://julia.na/ */
+:root{
+    /*colores*/
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --one-black: #201E1C;
+    --black: #201E1C;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
+    --warm-black: #282623;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 7rem;
+    text-align: center;
+    /*background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);*/
+}
+
+header .headerleft {
+    display:inline-flex;
+    align-items: center;
+    width: 50rem;
+    line-height: 45px;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header .headerleft a{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 7rem;
+    background-color: #000;
+    color: var(--bitcoin-orange);
+    margin: 0;
+
+}
+
+header .headerleft span{
+    width: 30rem;
+}
+
+header .headerright{
+    display:inline-flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header .headerright .headerRightMenu{
+    list-style: none;
+    width: auto;
+    height: auto !important;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row; 
+    font-weight: bold;   
+}
+
+header .headerright .headerRightMenu li{
+    margin: 20px;
+}
