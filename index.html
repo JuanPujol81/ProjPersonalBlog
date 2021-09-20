@@ -7,106 +7,147 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="./ccs/tablet.css" media="(min-width: 900px)">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Blog De Un Cubano</title>
 </head>
 <body>
-    <header >
-        <h1 class="headerleft">
-            <a>JR</a>
-            <span>Juan Ra&uacutel Pujol</span>
-        </h1>   
-                <section class="headerright">
-                    <ul class="headerRightMenu">
-                        <li>ABOUT</li>
-                        <li>TALKS</li>
-                        <li>WORK</li>
-                        <li>APPEARANCES</li>
-                        <li>GALLERY</li>
-                        <li>CONTACT</li>
-                    </ul>
-                </section>
-    </header>
-    <main>
-        <section class="bigpicture1">
-            <div>
-                <h2>Cuba & Beyond</h2>
-                <p>MAKE - FIX - HELP OTHERS</p>
-            </div>
-                <img src="data:image/png;base64,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" alt="Cuban Flag Icon">
-        </section>
-        <section class="biographi">
-            <div>
-                <h2>ABOUT ME</h2>
-                <p>Developer and freedom seeker.</p>
-                <p>I was born in Santiago de Cuba, in the eastern part of the island, on March 24, 1981. I entered the world of programming thanks to my mother taking me to a computer club, where at first I just played but then I began to interact with my first programming languages, Turbo Pascal and Basic. I was no more than 12 years old but I already felt that my studies would follow the path of information technology.</p>
-                <p>At the end of my high school studies, I opted for a Computer Science degree. I studied at the "Universidad de Oriente" college where the teaching level was of extreme quality. My studies at the University began in 2000, ending my degree in 2005. Due to the political and economic situation in Cuba and the opportunity to go live and work in Venezuela, I decided to go abroad, which had consequences for my professional life. The Cuban government restricts the departure of recent graduates from the country, since in order to receive my Bachelor's degree in Computer Science I had to work for the Cuban government for 5 years, after which I could leave the country if the government considered so, with my graduate degree, although it was already known that the regime did, and still do, everything to prevent cubans going abroad, specially professionals.</p>
-                <p>Venezuela opened the doors to me as a mother, and I began to work in the typical immigrant jobs until I was hired by Corp Banca C.A., a Chilean-owned banking institution that owns the American Express franchise for LAtino America.</p>
-                <p>My job in the banking world lasted 12 years until I went to work for a transnational company, but during all that time I was always self-taught with programming, although I never looked for work in the field. It wasn't until 2019, when I went to live with my wife in Portugal that I decided to upgrade and start looking for a job in technology. To achieve my goal, I bought a laptop with more than enough features to develop software and I started studying at Platzi online school, one of the largest online academies dedicated to the technology industry in Latin America.</p>
-                <p>Today, I am creating my portfolio of projects on GitHub, I finished my own Blog developed with pure HTML and CSS and whose design and code was entirely written by me. While doing all this, I am looking for a job in the world of programming to demonstrate my skills and contribute my knowledge and creativity to the creation of tools that take the world of development one step further.</p>
-            </div>
-        </section>
-        <section class="bigpicture2">
-            <div>
-                <h2></h2>
+            <header >
+                <h1 class="headerleft">
+                    <a>JR</a>
+                    <span>Juan Ra&uacutel Pujol</span>
+                </h1>
                 <div>
+                    <img src="data:image/png;base64,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" alt="Cuban Flag Icon">
+                </div>   
+                        <section class="headerright">
+                            <ul class="headerRightMenu">
+                                <li><a href="#biographi">ABOUT</a></li>
+                                <li><a href="#bigpicture2">GALLERY</a></li>
+                                <li><a href="#work">WORK</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </section>
+            </header>
+            <main>
+                <section class="bigpicture1">
                     <div>
-                        <a href=""></a>
-                        <p></p>
+                        <h2>Cuba & Beyond</h2>
+                        <p>MAKE - FIX - HELP OTHERS</p>
                     </div>
+                </section>
+                <section class="biographi" id="biographi">
                     <div>
-                        <a href=""></a>
-                        <p></p>
+                        <h2>ABOUT ME</h2>
+                        <p>Developer and freedom seeker.</p>
+                        <p>I was born in Santiago de Cuba, in the eastern part of the island, on March 24, 1981. I entered the world of programming thanks to my mother taking me to a computer club, where at first I just played but then I began to interact with my first programming languages, Turbo Pascal and Basic. I was no more than 12 years old but I already felt that my studies would follow the path of information technology.</p>
+                        <p>At the end of my high school studies, I opted for a Computer Science degree. I studied at the "Universidad de Oriente" college where the teaching level was of extreme quality. My studies at the University began in 2000, ending my degree in 2005. Due to the political and economic situation in Cuba and the opportunity to go live and work in Venezuela, I decided to go abroad, which had consequences for my professional life. The Cuban government restricts the departure of recent graduates from the country, since in order to receive my Bachelor's degree in Computer Science I had to work for the Cuban government for 5 years, after which I could leave the country if the government considered so, with my graduate degree, although it was already known that the regime did, and still do, everything to prevent cubans going abroad, specially professionals.</p>
+                        <p>In Venezuela I began to work in the typical immigrant jobs until I was hired by Corp Banca C.A., a Chilean-owned banking institution that owns the American Express franchise for LAtino America.</p>
+                        <p>My job in the banking world lasted 12 years until I went to work for a transnational company, but during all that time I was always self-taught with programming, although I never looked for work in the field. It wasn't until 2019, when I went to live with my wife in Portugal that I decided to upgrade and start looking for a job in technology. To achieve my goal, I bought a laptop with more than enough features to develop software and I started studying at Platzi online school, one of the largest online academies dedicated to the technology industry in Latin America.</p>
+                        <p>Today, I am creating my portfolio of projects on GitHub, I finished my own Blog developed with pure HTML and CSS and whose design and code was entirely written by me. While doing all this, I am looking for a job in the world of programming to demonstrate my skills and contribute my knowledge and creativity to the creation of tools that take the world of development one step further.</p>
                     </div>
-                    <div>
-                        <a href=""></a>
-                        <p></p>
+                </section>
+                <section class="bigpicture2" id="bigpicture2">
+                    <h2>
+                        Gallery
+                    </h2>
+                    <div class="picturesvideos">
+                        <div class="images">
+                            <div class="modal-container">
+                                <img
+                                    src="./src/img/christmas20201.jpg" 
+                                    alt="Chirstmas Madeira 2021">
+                                <p>Admiring for the first time the beautiful Christmas lights of Funchal.</p>
+                            </div>
+                            <div class="modal-container">
+                                <img 
+                                    src="./src/img/christmas20202.jpg" 
+                                    alt="Chirstmas Madeira 2021">
+                                <p>Funchal decoration on Christmas.</p>
+                            </div>
+                            <div class="modal-container">
+                                <img 
+                                    src="./src/img/christmas20203.jpg" 
+                                    alt="Chirstmas Madeira 2021">
+                                <p>My wife always has my back.</p>
+                            </div>
+                            <div class="modal-container">
+                                <img 
+                                    src="./src/img/madeiranview1.jpg" 
+                                    alt="Cabo Girao Madeira 2021">
+                                <p>Cabo Girão, Madeira.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="work" id="work">
+                    <div class="work_tittle">
+                        <h1>Work</h1>
+                        <p>During the last year I continued my preparation with the online school Platzi. The courses I have completed are:</p>
+                    </div>
+                    <div class="courses_tittles">
+                        <div class="courses_first_column">
+                            <iframe src="./src/pdffiles/diploma-asincronismo-js.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-basico-javascript.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-desarrollo-moderno-codestream.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-ecmascript-6.pdf"></iframe>
+                        </div>
+                        <div class="courses_second_column">
+                            <iframe src="./src/pdffiles/diploma-git-github.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-html-css.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-html-practico.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-introweb.pdf"></iframe>
+                        </div>
+                        <div class="courses_third_column">
+                            <iframe src="./src/pdffiles/diploma-javascript-navegador.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-javascript-profesional.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-mobile-first.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-npm.pdf"></iframe>
+                        </div>
+                        <div class="courses_fourth_column">
+                            <iframe src="./src/pdffiles/diploma-prework-macos.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-prework-windows.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-scope.pdf"></iframe>
+                            <iframe src="./src/pdffiles/diploma-sistemas-diseno.pdf"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <div class="contact" id="contact">
+                    <div class="center">
+                            <h2>CONTACT</h2>
+                            <hr>
+                            <p>
+                               <i class="icon_envelope"></i>
+                               <a href="">raul810324@gmail.com</a>
+                            </p>
+                            <div class="social_media">
+                                <div class="twitter_linkedin">
+                                    <div>
+                                        <i class="twitter_icon"></i>
+                                        <h1>@JotaRaul2000</h1>
+                                    </div>
+                                    <div>
+                                        <i class="linkedin_icon"></i>
+                                        <h1>Juan Raul Pujol</h1>
+                                    </div>
+                                </div>
+                                <div class="facebook_instagram">
+                                    <div>
+                                        <i class="facebook_icon"></i>
+                                        <h1>jotaraul.jr</h1>
+                                    </div>
+                                    <div>
+                                        <i class="instagram_icon"></i>
+                                        <h1>jotaraul_jr</h1>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="work">
-            <div>
-                <h4></h4>
-                <h5></h5>
-                <h5></h5>
-                <h5></h5>
-            </div>
-            <div>
-                <h4></h4>
-                <h5></h5>
-                <h5></h5>
-                <h5></h5>
-            </div>
-        </section>
-        <section class="bigpicture3">
-            <h2></h2>
-        </section>
-        <div class="pictureschain">
-            <h2></h2>
-            <p></p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <div class="imgcontrolpanel"></div>
-        <section>
-            <div>
-                <h2></h2>
-                <hr>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <p></p>
-                <a href=""></a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p></p>
-        <span>
-            <a href=""></a>
-            <a href=""></a>
-        </span>
-    </footer>
+            </main>
+            <footer>
+                <p>2021 Designed and posted by Juan R. Pujol</p>
+            </footer>
 </body>
 </html>
